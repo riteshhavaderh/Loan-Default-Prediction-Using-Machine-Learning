@@ -26,109 +26,43 @@ Target variable: Status (Default / Not Default)
 
 # Feature Overview
 
-1. ID :
-A unique identification number assigned to each loan application.
+| No | Feature                   | Description                      |
+|----|---------------------------|----------------------------------|
+| 1  | ID                        | Unique loan application ID       |
+| 2  | year                      | Year of application (2019 only)  |
+| 3  | loan_limit                | Conforming / Non-conforming loan |
+| 4  | Gender                    | Male / Female / Joint            |
+| 5  | approv_in_adv             | Pre-approval status              |
+| 6  | loan_type                 | Loan type (type1, type2, type3)  |
+| 7  | loan_purpose              | Purpose of loan (p1–p4)          |
+| 8  | Credit_Worthiness         | Credit category (l1 / l2)        |
+| 9  | open_credit               | Open credit lines                |
+| 10 | business_or_commercial    | Business/commercial loan         |
+| 11 | loan_amount               | Loan amount                      |
+| 12 | rate_of_interest          | Interest rate                    |
+| 13 | Interest_rate_spread      | Rate spread                      |
+| 14 | Upfront_charges           | Origination charges              |
+| 15 | term                      | Loan duration (months)           |
+| 16 | Neg_ammortization         | Negative amortization            |
+| 17 | interest_only             | Interest-only loan               |
+| 18 | lump_sum_payment          | Lump-sum option                  |
+| 19 | property_value            | Property value                   |
+| 20 | construction_type         | Property structure               |
+| 21 | occupancy_type            | Primary / Secondary / Investment |
+| 22 | Secured_by                | Home / Land                      |
+| 23 | total_units               | Number of units                  |
+| 24 | income                    | Applicant income                 |
+| 25 | credit_type               | Credit bureau                    |
+| 26 | Credit_Score              | Credit score                     |
+| 27 | co-applicant_credit_type  | Co-applicant credit source       |
+| 28 | age                       | Age group                        |
+| 29 | submission_of_application | Application channel              |
+| 30 | LTV                       | Loan-to-Value ratio              |
+| 31 | Region                    | Geographic region                |
+| 32 | Security_Type             | Direct / Indirect                |
+| 33 | Status (Target)           | 1 = Default, 0 = Not Default     |
+| 34 | dtir1                     | Debt-to-Income ratio             |
 
-3. year :
-The year in which the loan application was submitted. [2019]
-
-5. loan_limit :
-Indicates whether the loan amount exceeds the conforming limit (e.g., conforming (cf) / non-conforming (ncf) ). ['cf', 'ncf']
-
-6. Gender :
-Applicant’s gender information [Male, Female, Joint].
-
-7. approv_in_adv :
-Specifies whether the applicant received pre-approval for the loan [pre / nopre].
-
-8. loan_type :
-Type of loan applied [type1, type2, type3].
-
-9. loan_purpose :
-Purpose of the loan (e.g., home purchase, refinancing, etc.) ['p1' /  'p4' /  'p3' /  'p2']
-
-10. Credit_Worthiness :
-Category representing applicant’s creditworthiness [l1 / l2].
-
-11. open_credit :
-Indicates whether the borrower has open credit lines ['nopc' /  'opc']
-
-12. business_or_commercial :
-Whether the loan is for business or commercial use. ['nob/c' /  'b/c']
-
-13. loan_amount :
-Total amount of loan applied for (numeric values).
-
-14. rate_of_interest :
-Interest rate applicable to the loan. (numeric values)
-
-15. Interest_rate_spread :
-Difference between the interest rate and market benchmark. (numeric values).
-
-16. Upfront_charges :
-Additional fees charged at the loan origination. (numeric values).
-
-17. term :
-Total loan term duration in months (numeric values). (e.g., 180, 240, 360).
-
-18. Neg_ammortization :
-Indicates whether negative amortization is allowed ['not_neg' /  'neg_amm' nan]
-
-19. interest_only :
-Specifies whether the loan allows interest-only payments. ['not_int' /  'int_only']
-
-20. lump_sum_payment :
-Whether a lump-sum payment option is included. ['not_lpsm' / 'lpsm']
-
-21. property_value :
-Value of the property against which the loan is issued. (numeric values)
-
-22. construction_type :
-Structure type of the property ['sb', 'mh']
-
-23. occupancy_type :
-Indicates whether the applicant will occupy the property [primary / secondary / investment].
-
-24. Secured_by :
-Whether the loan is secured by home or land. 
-
-25. total_units :
-Number of housing units in the property (1U, 2U, 3U, 4U).
-
-26. income :
-Applicant’s monthly or annual income. (numeric values)
-
-27. credit_type :
-Source of credit score (CRIF, CIBIL, EXP, EQUI).
-
-28. Credit_Score :
-Numerical credit score of the applicant.
-
-29. co-applicant_credit_type :
-Denotes credit source for the co-applicant. ['CIB' 'EXP']
-
-30. age :
-Applicant’s age group (e.g., 25–34, 35–44, etc.)
-
-31. submission_of_application :
-Channel via which the application was submitted (institution / not institution). ['to_inst' 'not_inst']
-
-32. LTV (Loan-to-Value Ratio) :
-Ratio of loan amount to property value — important for risk assessment. (numeric value)
-
-33. Region :
-Geographic region (North, South, Central, North-East).
-
-34. Security_Type :
-Indicates direct or indirect security associated with the loan. ['direct' 'Indriect']
-
-35. Status (Target Variable) :
-Represents whether the borrower defaulted:
-•	1 = Default
-•	0 = Not Default
-
-36. dtir1 (Debt-to-Income Ratio) :
-Measures applicant’s ability to manage monthly payments. (numeric values)s
 
 
 
