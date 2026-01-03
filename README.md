@@ -142,7 +142,7 @@ Significantly outperformed Logistic Regression
 
 Note: Extremely high accuracy suggests the presence of strong feature patterns in the dataset and highlights the need for careful validation to avoid data leakage in real-world applications.
 
-✅ Conclusion
+# Conclusion
 
 Logistic Regression served as a strong baseline model.
 
